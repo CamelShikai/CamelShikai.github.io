@@ -1,4 +1,4 @@
 collections:
   authors:
 markdown: kramdown
-theme: minima
+theme: jekyll-theme-minimal
