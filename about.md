@@ -2,5 +2,6 @@
 layout: default
 title: About
 ---
-# About page
-This page tells yiou a little bit about me.
+####   This page tells you a little bit about me.  
+###### I love sports, especially soccer
+![My helpful screenshot](/assets/images/nju_striker.jpg)
