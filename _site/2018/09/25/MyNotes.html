@@ -1,0 +1,34 @@
+<h3 id="kafka">Kafka</h3>
+<ol>
+  <li>Kafka is run as a cluster on one or more servers.</li>
+  <li>The Kafka cluster stores streams of records in categories called topics.</li>
+  <li>Each record consists of a key, value, and a timesstamp.</li>
+</ol>
+
+<ul>
+  <li>Each topic consists of multiple partitions.
+    <ul>
+      <li>allow the log to scale horizontally</li>
+      <li>act as the unit of parallelism.</li>
+    </ul>
+  </li>
+  <li>Sequencial id number in each partition is called <strong>offset</strong> which uniquely identifies each record within the partition.</li>
+  <li>The Kafka cluster durably persists all published records.</li>
+</ul>
+
+<h6 id="distribution">Distribution</h6>
+<ul>
+  <li>Each partition is replicated across a configurable number of servers for fault tolerance.</li>
+  <li>Each partiion has one server acts as the “leader” and zero or more as “followers”.</li>
+</ul>
+
+<h6 id="consumer">Consumer</h6>
+<ul>
+  <li>Consumer label themselves with a <em>consumer group</em> name.
+    <ul>
+      <li>Each record published to a topic is delivered to one consumer instance within each subscribing consumer group.</li>
+      <li>Consumer instances could be in separate processes or on separate machines.</li>
+    </ul>
+  </li>
+</ul>
+
