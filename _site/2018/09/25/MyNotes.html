@@ -74,7 +74,7 @@ Kafka bears both of these two characteristics</li>
   <li>Producers write to a single leader, this provides a means of load balancing production so that each write can be serviced by a separate broker and machine. In the first image, the producer is writing to partition 0 of the topic and partition 0 replicates that write to the available replicas</li>
 </ul>
 
-<p><img src="/assets/images/producing-to-partitions.png" alt="partition-write" /><br />
+<p><img src="/assets/images/producing-to-partitions.png" alt="partition-write" />
 <img src="/assets/images/consumer-groups.png" alt="consumergroup" /></p>
 
 <ul>
@@ -87,3 +87,7 @@ Kafka bears both of these two characteristics</li>
   </li>
 </ul>
 
+<hr />
+<ul>
+  <li>Linking could happen in compile time, load time and even run time.</li>
+</ul>
