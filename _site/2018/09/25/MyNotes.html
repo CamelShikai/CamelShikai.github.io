@@ -62,13 +62,13 @@ Kafka bears both of these two characteristics</li>
 </ul>
 
 <hr />
-<h5 id="python-tips">Python tips</h5>
+<h4 id="python-tips">Python tips</h4>
 <p><a href="http://book.pythontips.com/en/latest/">http://book.pythontips.com/en/latest/</a></p>
 <ul>
   <li>Python provides a better method for managing resources than destructors - contexts. It is better to use a context manager to release resources than using destructors.</li>
 </ul>
 
-<h5 id="kafka-1">Kafka</h5>
+<h4 id="kafka-1">Kafka</h4>
 <ul>
   <li>Each broker holds a number of partitions and each of these partitions can be either a leader or a replica for a topic. All writes and reads to a topic go through the leader and the leader coordinates updating replicas with new data. If a leader fails, a replica takes over as the new leader.</li>
   <li>Producers write to a single leader, this provides a means of load balancing production so that each write can be serviced by a separate broker and machine. In the first image, the producer is writing to partition 0 of the topic and partition 0 replicates that write to the available replicas</li>
@@ -131,3 +131,11 @@ deepcopy copy every item in another piece of memory
 - markdown ...
 &lt;/section&gt;
 </code></pre></div></div>
+
+<h4 id="c">C++</h4>
+<ol>
+  <li>Compiler ignores duplicate declarations but not defination.</li>
+  <li>static variables are guanteed to be initialized before program starts</li>
+  <li>Static member functions are allowed to access only the static data members or other static member functions.</li>
+  <li>Static variables in a Function: When a variable is declared as static, space for it gets allocated for the lifetime of the program. Even if the function is called multiple times, space for the static variable is allocated only once and the value of variable in the previous call gets carried through the next function call. This is useful for implementing coroutines in C/C++ or any other application where previous state of function needs to be stored.</li>
+</ol>
