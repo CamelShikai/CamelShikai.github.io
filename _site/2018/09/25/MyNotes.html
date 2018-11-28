@@ -139,3 +139,15 @@ deepcopy copy every item in another piece of memory
   <li>Static member functions are allowed to access only the static data members or other static member functions.</li>
   <li>Static variables in a Function: When a variable is declared as static, space for it gets allocated for the lifetime of the program. Even if the function is called multiple times, space for the static variable is allocated only once and the value of variable in the previous call gets carried through the next function call. This is useful for implementing coroutines in C/C++ or any other application where previous state of function needs to be stored.</li>
 </ol>
+
+<hr />
+<ul>
+  <li>python module is simply a .py file</li>
+  <li>module initialization
+    <ul>
+      <li>executing codes in the module once</li>
+      <li>if another module imports the same module, the module will not be loaded twice but once. Local variables inside the module act as a “singleton”, they are initialized only once.</li>
+    </ul>
+  </li>
+  <li>python package is a directory</li>
+</ul>
