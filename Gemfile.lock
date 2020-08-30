@@ -129,6 +129,7 @@ DEPENDENCIES
   actionview (>= 5.2.2.1)
   architect
   hacker
+  i18n
   kramdown-parser-gfm
   minima
 
