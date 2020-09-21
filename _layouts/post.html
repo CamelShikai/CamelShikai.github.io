@@ -1,7 +1,12 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
-<p>{{ page.date | date_to_string }} - {{ page.author }}</p>
+<div class="jumbotron text-center">
+    <h2 >{{ page.title }}</h2>
+    <h3>{{ page.date | date_to_string }} - {{ page.author }}</h3>
+</div>
 
-{{ content }}
+<div class="ml-5 mr-5 px-2" style="font-size: medium">
+    {{ content }}
+</div>
+
