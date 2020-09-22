@@ -1,6 +1,6 @@
-- name: Home
+- name: World Drifter
   link: /
-- name: Blog
+- name: My Blog
   link: /blog.html
 - name: Staff
   link: /staff.html
